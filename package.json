@@ -1,0 +1,33 @@
+{
+  "name": "partnertech-ai-crm",
+  "version": "1.0.0",
+  "description": "PartnerTech.ai CRM Integration with HACP Framework - Complete War Room Experience",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && vite",
+    "dev:server": "cd server && tsx watch src/index.ts",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && vite build",
+    "build:server": "cd server && tsc",
+    "start": "cd server && node dist/index.js",
+    "type-check": "cd client && tsc --noEmit && cd ../server && tsc --noEmit"
+  },
+  "keywords": [
+    "crm",
+    "ai",
+    "hacp",
+    "gohighlevel",
+    "lead-generation",
+    "referral-tracking",
+    "partnertech"
+  ],
+  "author": "SaintVisionAi-Cookin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SaintVisionAi-Cookin/Gootaguy-Cookin-Faith.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
